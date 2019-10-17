@@ -33,6 +33,7 @@
 			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="check.cpp" />
 		<Unit filename="check.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -43,6 +44,7 @@
 		<Unit filename="play.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="write_words.cpp" />
 		<Unit filename="write_words.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>

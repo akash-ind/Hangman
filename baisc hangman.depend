@@ -1,18 +1,16 @@
 # depslib dependency file v1.0
-1571233866 source:d:\c++ program\project\baisc hangman\main.cpp
+1571295595 source:d:\c++ program\project\baisc hangman\main.cpp
 	<iostream>
 	<stdlib.h>
-	<random>
 	<time.h>
 	<fstream>
 	"play.h"
 	"check.h"
 	"write_words.h"
 
-1571140823 d:\c++ program\project\baisc hangman\play.h
-	"check.h"
+1571292272 d:\c++ program\project\baisc hangman\play.h
 
-1571137251 d:\c++ program\project\baisc hangman\check.h
+1571300197 d:\c++ program\project\baisc hangman\check.h
 
-1571234076 d:\c++ program\project\baisc hangman\write_words.h
+1571292372 d:\c++ program\project\baisc hangman\write_words.h
 

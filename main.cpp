@@ -1,6 +1,5 @@
 #include <iostream>
 #include<stdlib.h>
-#include<random>
 #include<time.h>
 #include<fstream>
 #include "play.h"
@@ -16,17 +15,18 @@ int main()
     char ch;
     int value;
     cout<<"Welcome To Hangman Game"<<endl;
-    cout<<"To play game"<<endl;
-    cout<<"Press P\n";
-    cout<<"To Quit"<<endl;
-    cout<<"Press Q\n";
+
     do{
+        cout<<"To play game"<<endl;
+        cout<<"Press P\n";
+        cout<<"To Quit"<<endl;
+        cout<<"Press Q\n";
         cin>>ch;
-        cout<<"in main and in while loop"<<endl;
         ch=toupper(ch);
         switch(ch)
         {
-            case 'P':value=play();
+            case 'P':cin.clear();
+                value=play();
             switch(value)
             {
                 case 0:cout<<"Some error occured";
@@ -38,15 +38,20 @@ int main()
                         break;
             }
             break;
-            case 'Q':cout<<"Bye !!!";
+            case 'Q':cin.clear();
+                cout<<"Bye !!!";
             break;
             case 'W':value=write();
                     if(value==0)
                     {
                         cout<<"Cannot open the File";
                     }
+                    else
+                    {
+                        cout<<value;
+                    }
             break;
-            default: cout<<"You entered wrong choice";
+            default:cout<<"You entered wrong choice";
         }
     }while(ch!='Q');
     return 1;
